@@ -509,6 +509,18 @@ img{
     .market .overlay {
         height: 250px;
     }
+    /* contact section */
+    .contact-form{
+        width: 460px;
+    }
+    .img-contact{
+        flex-basis: 50%;
+    }
+    .contact-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     /* footer */
     .footer-container{
         grid-template-columns: repeat(3, 1fr);
