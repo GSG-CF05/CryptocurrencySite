@@ -354,7 +354,7 @@ img{
         margin: 0%;
     }
     .section{
-        padding: 6rem 0 2rem;
+        padding: 3rem 0 2rem;
     }
     .section-subtitle{
         margin-bottom: 4rem;
@@ -407,6 +407,13 @@ img{
     .home-scroll-button{
         margin-left: 3rem;
     }
+    /* about section */
+    .about-container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .about-img {
+        width: 300px;
+    }
     /* footer */
     .footer-container{
         grid-template-columns: repeat(3, 1fr);
@@ -436,5 +443,9 @@ img{
     /* home section */
     .home-img {
         width: 500px;
+    }
+    /* about section */
+    .about-img {
+        width: 300px;
     }
 }
