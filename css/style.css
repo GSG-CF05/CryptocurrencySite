@@ -382,6 +382,11 @@ img{
         order: 1;
         justify-self: center;
     }
+    /* market section */
+    .market-content {
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
     /* footer */
     .footer-container{
         grid-template-columns: repeat(2, 1fr);
@@ -457,6 +462,17 @@ img{
     .about-img {
         width: 300px;
     }
+    /* banner section */
+    .market-content {
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    .market.section {
+        height: 250px;
+    }
+    .market .overlay {
+        height: 250px;
+    }
     /* footer */
     .footer-container{
         grid-template-columns: repeat(3, 1fr);
@@ -490,5 +506,11 @@ img{
     /* about section */
     .about-img {
         width: 300px;
+    }
+    .market.section {
+        height: 300px;
+    }
+    .market .overlay {
+        height: 300px;
     }
 }
