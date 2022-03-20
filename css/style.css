@@ -287,6 +287,42 @@ img{
     justify-content: center;
     font-size: 14px;
 }
+
+
+/* ==================== contact me section ==================== */
+.contact-container{
+    row-gap: 3rem;
+}
+
+.contact-content{
+    background-color: var(--input-color);
+    border-radius: .5rem;
+    padding: .75rem 1rem .25rem ;
+
+}
+.contact-input{
+    width: 100%;
+    background-color: var(--input-color);
+    color: var(--text-color);
+    font-size: var(--text-font-size);
+    border: none;
+    outline: none;
+    padding: .25rem .5rem .5rem 0rem;
+}
+.button {
+    display: inline-block;
+    background-color: var(--title-color);
+    color: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+.button--flex {
+    display: inline-flex;
+    align-items: center;
+}
+.contact-inputs a{
+    justify-content: center;
+}
 /* ==================== footer ==================== */
 .footer{
     padding-top: 2rem;
