@@ -1,0 +1,14 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 56px;
+}
+.subtitle {
+  color: var(--text-color);
+}
