@@ -45,3 +45,51 @@
   font-size: 14px;
   font-weight: bold;
 }
+.form {
+  margin: 32px;
+  display: flex;
+  flex-direction: column;
+}
+input[type="text"],
+textarea {
+  width: 311px;
+  height: 40px;
+  background-color: var(--input-color);
+  margin-top: 8px;
+  margin-bottom: 16px;
+  border: none;
+  padding: 10px;
+}
+label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+input[type="submit"] {
+  width: 311px;
+  height: 50px;
+  font-size: 20px;
+  color: #e5e5e5;
+  border: none;
+  background-color: #f6b01a;
+}
+.inputname {
+  display: flex;
+  flex-direction: column;
+}
+.emailinput {
+  display: flex;
+  flex-direction: column;
+}
+.phoneinput {
+  display: flex;
+  flex-direction: column;
+}
+.textareainput {
+  display: flex;
+  flex-direction: column;
+}
+.kk {
+  display: flex;
+  flex-direction: column;
+}
