@@ -12,3 +12,33 @@
 .subtitle {
   color: var(--text-color);
 }
+.general {
+  margin-top: 51px;
+  margin-left: 34px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.website {
+  margin-bottom: 20px;
+  padding-right: 19px;
+  font-size: 24px;
+  color: var(--title-color);
+}
+.email {
+  margin-bottom: 20px;
+  padding-right: 19px;
+  font-size: 24px;
+  color: var(--title-color);
+}
+.phone {
+  margin-bottom: 20px;
+  padding-right: 19px;
+  font-size: 24px;
+  color: var(--title-color);
+}
+.contact-info div a {
+  color: var(--text-color);
+  font-size: 14px;
+  font-weight: bold;
+}
