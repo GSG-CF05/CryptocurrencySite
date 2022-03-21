@@ -84,7 +84,7 @@ img{
 
 /* ============================ reusable css classes ============================ */
 .section{
-    padding: 32px 0 64px;
+    padding: 32px 0 32px;
 }
 .section-title{
     font-size: var(--title-font-size);
@@ -99,7 +99,7 @@ img{
 
 /* ============================ layout ============================ */
 .container{
-    max-width: 768px;
+    max-width: 960px;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
 }
@@ -114,7 +114,6 @@ img{
     left: 0;
     z-index: 100;
     background-color: var(--body-color);
-    /* box-shadow: 0px 0px 15px rgba(255, 255, 255, .8); */
 }
 
 /* ============================ nav ============================ */
@@ -184,9 +183,146 @@ img{
     bottom: 0;
 }
 
+/* ============================ home ============================ */
+.home-container{
+    gap: 1rem;
+}
+.home-content{
+    /* grid-template-columns: 1fr 1fr; */
+    padding-top: 3.5rem;
+    align-items: center;
+}
+.home-img{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-title{
+    font-size: var(--title-font-size);
+    color: var(--title-color);
+}
+.home-subtitle{
+    font-size: var(--subtitle-font-size);
+    color: var(--subtitle-color);
+    margin-bottom: .75rem;
+}
+.home-description{
+    margin-bottom: 2rem;
+    font-size: var(--text-font-size);
+}
+.home-scroll{
+    display: none;
+}
+.home-scroll-button{
+    color: var(--title-color);
+    transition: all .3s;
+}
+.home-scroll-button:hover{
+    transform: translateY(.25rem);
+}
+.home-scroll-mouse{
+    font-size: 2rem;
+}
+.home-scroll-name{
+    font-size: var(--text-font-size);
+    color: var(--text-color);
+    margin-right: .25rem;
+}
+.home-scroll-arrow{
+    font-size: 1.25rem;
+}
+
+/* ============================ about ============================ */
+.about-img{
+    width: 200px;
+    height: 200px;
+    border-radius: .5rem;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+/* ============================ market ============================ */
+.market.section{
+    background: url(../images/market-banner.jpg) no-repeat center;
+    background-size: cover;
+    height: 200px;
+    margin-bottom: 32px;
+    padding: 0;
+}
+.market .overlay{
+    width: 100%;
+    height: 200px;
+    background: rgba(0, 0, 0, 0.678);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.market-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+}
+.market-content p{
+    display: block;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    padding: 0 8px;
+}
+.btn-market{
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: #F6B01A;
+    color: #030E20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
 
 
+/* ==================== contact me section ==================== */
+.contact-container{
+    row-gap: 3rem;
+}
 
+.contact-content{
+    background-color: var(--input-color);
+    border-radius: .5rem;
+    padding: .75rem 1rem .25rem ;
+
+}
+.contact-input{
+    width: 100%;
+    background-color: var(--input-color);
+    color: var(--text-color);
+    font-size: var(--text-font-size);
+    border: none;
+    outline: none;
+    padding: .25rem .5rem .5rem 0rem;
+}
+.button {
+    display: inline-block;
+    background-color: var(--title-color);
+    color: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+.button--flex {
+    display: inline-flex;
+    align-items: center;
+}
+.contact-inputs a{
+    justify-content: center;
+}
 /* ==================== footer ==================== */
 .footer{
     padding-top: 2rem;
@@ -228,7 +364,7 @@ img{
     position: fixed;
     right: 1rem;
     bottom: -20%;
-    background-color: var(--text-color);
+    background-color: var(--title-color);
     opacity: .8;
     padding: 0 .3rem;
     border-radius: .4rem;
@@ -260,6 +396,13 @@ img{
     .nav-list{
         column-gap: 0;
     }
+
+    /* home section */
+    .home-data{
+        text-align: center;
+    }
+
+    /* footer */
     .footer-copy {
         font-size: 10px;
     }
@@ -267,6 +410,20 @@ img{
 
 /* for medium devices */
 @media screen and (min-width: 568px) {
+    /* home section */
+    .home-data{
+        grid-column: initial;
+    }
+    .home-img{
+        order: 1;
+        justify-self: center;
+    }
+    /* market section */
+    .market-content {
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+    /* footer */
     .footer-container{
         grid-template-columns: repeat(2, 1fr);
     }
@@ -281,7 +438,7 @@ img{
         margin: 0%;
     }
     .section{
-        padding: 6rem 0 2rem;
+        padding: 3rem 0 2rem;
     }
     .section-subtitle{
         margin-bottom: 4rem;
@@ -315,7 +472,56 @@ img{
     .change-theme{
         margin: 0%;
     }
-    
+
+    /* home section */
+    .home-container{
+        row-gap: 2rem;
+    }
+    .home-content {
+        grid-template-columns: 1fr 1fr;
+        padding-top: 5.5rem;
+        column-gap: 2rem;
+    }
+    .home-img {
+        width: 300px;
+    }
+    .home-scroll{
+        display: block;
+    }
+    .home-scroll-button{
+        margin-left: 3rem;
+    }
+    /* about section */
+    .about-container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .about-img {
+        width: 300px;
+    }
+    /* banner section */
+    .market-content {
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    .market.section {
+        height: 250px;
+    }
+    .market .overlay {
+        height: 250px;
+    }
+    /* contact section */
+    .contact-form{
+        width: 460px;
+    }
+    .img-contact{
+        flex-basis: 50%;
+    }
+    .contact-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* footer */
     .footer-container{
         grid-template-columns: repeat(3, 1fr);
     }
@@ -340,5 +546,19 @@ img{
     .main, 
     .footer-container{
         padding: 0%;
+    }
+    /* home section */
+    .home-img {
+        width: 500px;
+    }
+    /* about section */
+    .about-img {
+        width: 300px;
+    }
+    .market.section {
+        height: 300px;
+    }
+    .market .overlay {
+        height: 300px;
     }
 }
