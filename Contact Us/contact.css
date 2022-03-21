@@ -12,6 +12,9 @@
 .subtitle {
   color: var(--text-color);
 }
+.div-img {
+  display: none;
+}
 .general {
   margin-top: 51px;
   margin-left: 34px;
