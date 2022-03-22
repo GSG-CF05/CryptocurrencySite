@@ -1,0 +1,166 @@
+.main{
+    margin: 16px;
+  }
+  .head-page{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 56px;
+    padding: 16px;
+    align-items: center;
+    background: var(--input-color);
+    border-radius: 15px;
+    position: relative;
+    color: var(--text-color);
+  }
+
+  .list{
+    width: 160px;
+    height: 200px;
+    position: absolute;
+    background: burlywood;
+    top: 56px;
+    right: 0;
+    padding: 16px;
+    border-radius: 15px;
+    /* display: none; */
+  }
+  .list li{
+    display: flex;
+    align-items: center;
+    padding-bottom: 8px;
+    color: var(--text-color);
+  }
+  .list img{
+    width: 24px;
+    height: 24px
+    
+  }
+  
+  .div-img{
+    width: 30px;
+    height: 30px;
+  }
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+  .change-percent {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 130px;
+    align-items: center;
+    background: red;
+    border-radius: 15px;
+    margin-top: 24PX;
+    background-image: url(../images/crypto.jpg);
+
+  }
+
+  
+  .gainers-coin, .losers-coin{
+    display: flex;
+    color: #fff;
+    font-size: 13px;
+  }
+  .yalow{
+    color: var(--title-color);
+  }
+  .div-search{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    margin-top: 24px;
+    border-radius: 50px;
+    background: var(--input-color);
+
+
+  }
+  
+  .div-search i {
+    font-size: 18px;
+  }
+  .div-search input[type="text"] {
+    outline: none;
+    border: none;
+    background: var(--input-color);
+    color: #fff;
+  }
+  .div-title {
+    margin-top: 24px;
+  }
+  .boxes{
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+  }
+  .box{
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    margin-top: 16px;
+    border-radius: 15px;
+    background-image: url(../images/crypto.jpg);
+
+
+  }
+  .head-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .content-box{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .img-title {
+    display: flex;
+}
+  .name, .percent-change-coin{
+    padding-left: 8px;
+    color: #fff;
+    font-size: 12px;
+
+  }
+  .name span, .percent-change-coin span{
+      color: var(--title-color);
+  }
+
+  .name, .percent-change-coin{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .list{
+    width: 160px;
+    height: 200px;
+    position: absolute;
+    background: burlywood;
+    top: 56px;
+    right: 0;
+    padding: 16px;
+    border-radius: 15px;
+    display: none;
+  }
+  .list li{
+    display: flex;
+    align-items: center;
+    padding-bottom: 8px;
+  }
+  .head-box img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    
+}
+
+.coin-details {
+    font-size: 13px;
+    color: #fff;
+}
