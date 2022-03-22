@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@900&family=Lobster&family=Nunito:wght@400;800&family=Shippori+Antique&family=Signika+Negative:wght@300;400;500;600;700&display=swap");
+
+body {
+  background-color: #fff;
+  font-family: "Signika Negative", sans-serif;
+}
+.about_title {
+  color: #f6b01a;
+  font-size: 27px;
+  margin-left: 16px;
+  margin-top: 66px;
+}
+.infoImg {
+  width: 90%;
+  margin-left: 16px;
+  margin-right: 16px;
+  border-radius: 20px;
+}
+.details {
+  color: #f6b01a;
+  font-size: 18px;
+  margin-left: 16px;
+}
+.about_details {
+  width: 45%;
+  height: 250px;
+  border: 2px solid #f6b01a;
+  margin-right: 16px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bitcoicon {
+  border-radius: 50px;
+  width: 60px;
+  height: 60px;
+  margin-top: 15px;
+}
+.recommended {
+  text-align: center;
+  color: #042a3d;
+}
+.aboutsite {
+  text-align: center;
+  color: rgb(112, 112, 112);
+}
+.first {
+  display: flex;
+  margin-left: 16px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .about_title {
+    color: #f6b01a;
+    font-size: 33px;
+    margin-left: 16px;
+    margin-top: 66px;
+  }
+  .details {
+    color: #f6b01a;
+    font-size: 25px;
+    margin-left: 16px;
+  }
+  .bitcoicon {
+    border-radius: 50px;
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+  }
+  .recommended {
+    text-align: center;
+    color: #042a3d;
+    font-size: 18px;
+  }
+  .aboutsite {
+    text-align: center;
+    color: rgb(112, 112, 112);
+  }
+}
+@media screen and (min-width: 568px) {
+  .recommended {
+    text-align: center;
+    color: #042a3d;
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about_title {
+    color: #f6b01a;
+    font-size: 35px;
+    margin-left: 16px;
+    margin-top: 66px;
+  }
+  .infoImg {
+    width: 90%;
+    margin-left: 16px;
+    margin-right: 16px;
+    border-radius: 20px;
+  }
+  .details {
+    color: #f6b01a;
+    font-size: 30px;
+    margin-left: 16px;
+  }
+  .about_details {
+    width: 45%;
+    height: 250px;
+    border: 2px solid #f6b01a;
+    margin-right: 16px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bitcoicon {
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    margin-top: 15px;
+  }
+  .recommended {
+    text-align: center;
+    color: #042a3d;
+  }
+  .aboutsite {
+    text-align: center;
+    color: rgb(112, 112, 112);
+  }
+  .alldetails {
+    display: flex;
+
+    margin-bottom: 20px;
+  }
+}
