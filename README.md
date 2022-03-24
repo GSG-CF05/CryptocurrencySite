@@ -71,7 +71,7 @@ The team agreed on guidelines to follow during development. The technologies and
 - When clicking on About link, it will take the user directly to its page, and he will find some information about the site .
 - Below the home, when he clicks on market button, he will be moving to the most important part of the website, which provides the
   user with general information about the Crypto Market, yet, the most needed, such as top 20 market-cap coins, the top 5 gainers
-  and loserless, Market Summary that is located at the top right of page, which pops up once hovering over it or clicking on it and
+  and losers, Market Summary that is located at the top right of page, which pops up once hovering over it or clicking on it and
   search area where user can search about a certain coin within the whole content of fetched crypto api data using useful features like
   auto complete and select.
 - The last section that contains a link which leads to the Contact Us page.
