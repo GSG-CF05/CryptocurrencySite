@@ -33,218 +33,30 @@
     </div>
 
     <!-- ============================ header ============================ -->
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="nav-logo"><img src="../images/logo-light.png" alt=""></a>
-
-            <div class="nav-menu" id="nav-menu">
-                <ul class="nav-list grid">
-                    <li class="nav-item">
-                        <a href="../index.html" class="nav-link active-link">
-                            <i class="uil uil-estate nav-icon"></i>Home
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="../About/about.html" class="nav-link">
-                            <i class="uil uil-user nav-icon"></i>About
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="../Market/market.html" class="nav-link">
-                            <i class="uil uil-chart-bar nav-icon"></i>Market
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="../Contact Us/contact.html" class="nav-link">
-                            <i class="uil uil-message nav-icon"></i>Contact
-                        </a>
-                    </li>
-                </ul>
-                <i class="uil uil-times nav-close" id="nav-close"></i>
-            </div>
-
-            <div class="nav-btn">
-                <!-- Theme change button -->
-                <i class="uil uil-moon change-theme" id="theme-button"></i>
-                
-                <div class="nav-toggle" id="nav-toggle">
-                    <i class="uil uil-apps"></i>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <main class="main">
-        <div class="head-page">
+   <div class="head-page">
             <p class="marketSummary">Market Summary</p>
             <div class="div-img">
-                <img src="../images/analysis.svg" alt="">
+                <img class="imgIcon" src="../images/analysis.svg" alt="">
             </div>
             <ul class="list">
                 <p class="title-list">cryptocurrency</p>
-                <li>
-                    <img src="../images/volume-control.png" alt="">
-                    <span>volume</span>
+                <li  class="list_volume">
+                    <img class="volumeImg" src="../images/volume-control.png" alt="">
+                    <span  class="volume">volume</span>
                 </li>
-                <li>
-                    <img src="../images/volume-control.png" alt="">
-                    <span>volume</span>
+
+                <li class="list_price">
+                     <img class="priceImg" src="../images/volume-control.png" alt="">
+                    <span  class="price">price</span>
                 </li>
-                <li>
-                    <img src="../images/volume-control.png" alt="">
-                    <span>volume</span>
+                
+                <li class="marketcap">
+                   <img class="marketcapImg" src="../images/volume-control.png" alt="">
+                    <span  class="marketcapSpan">marketcap</span>
                 </li>
-                <li>
-                    <img src="../images/volume-control.png" alt="">
-                    <span>volume</span>
-                </li>
+           
             </ul>
         </div>
-
-
-        <!-- <div class="change-percent">
-            <div class="top-gainers">
-                <div class="gainers-coin">
-                    <p>coin</p>
-                    <span>coin</span>
-                </div>
-                <div class="gainers-coin">
-                    <p>coin</p>
-                    <span>coin</span>
-                </div>
-                <div class="gainers-coin">
-                    <p>coin</p>
-                    <span>coin</span>
-                </div>
-                <div class="gainers-coin">
-                    <p>coin</p>
-                    <span>coin</span>
-                </div>
-                <div class="gainers-coin">
-                    <p>coin</p>
-                    <span>coin</span>
-                </div>
-            </div>
-
-            <div class="top-losers">
-                <div class="losers-coin">
-                    <p>coin</p>
-                    <span>coin</span>
-                </div>
-                <div class="losers-coin">
-                    <p>coin</p>
-                    <span>coin</span>
-                </div>
-                <div class="losers-coin">
-                    <p>coin</p>
-                    <span>coin</span>
-                </div>
-                <div class="losers-coin">
-                    <p>coin</p>
-                    <span>coin</span>
-                </div>
-                <div class="losers-coin">
-                    <p>coin</p>
-                    <span>coin</span>
-                </div>
-            </div>
-        </div> -->
-
-        <!-- <div class="div-search">
-            <i class="uil uil-search"></i>
-            <input type="text" placeholder="Enter the symbol ">
-            <i class="uil uil-angle-down"></i>
-        </div> -->
-
-        <!-- <div class="div-title">
-            <div class="section-title">Cryptocurrency Table</div>
-            <div class="section-subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting</div>
-        </div> -->
-        <!-- <div class="boxes">
-            <div class="box">
-                <div class="head-box">
-                    <div class="img-title">
-                        <div class="div-img">
-                            <img src="../images/bitcoinImg.jpg" alt="">
-                        </div>
-                        <p class="name">Bitcoin<span>BTC</span></p>
-                    </div>
-                    <p class="percent-change-coin">2 <span>BTC</span></p>
-                </div>
-                <div class="content-box">
-                    <div class="coin-details">
-                        <p>+1000</p>
-                        <span>Price</span>
-                    </div>
-
-                    <div class="coin-details">
-                        <p>+1000</p>
-                        <span>Price</span>
-                    </div>
-
-                    <div class="coin-details">
-                        <p>+1000</p>
-                        <span>Price</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="head-box">
-                    <div class="img-title">
-                        <div class="div-img">
-                            <img src="../images/bitcoinImg.jpg" alt="">
-                        </div>
-                        <p class="name">Bitcoin<span>BTC</span></p>
-                    </div>
-                    <p class="percent-change-coin">2 <span>BTC</span></p>
-                </div>
-                <div class="content-box">
-                    <div class="coin-details">
-                        <p>+1000</p>
-                        <span>Price</span>
-                    </div>
-
-                    <div class="coin-details">
-                        <p>+1000</p>
-                        <span>Price</span>
-                    </div>
-
-                    <div class="coin-details">
-                        <p>+1000</p>
-                        <span>Price</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="head-box">
-                    <div class="img-title">
-                        <div class="div-img">
-                            <img src="../images/bitcoinImg.jpg" alt="">
-                        </div>
-                        <p class="name">Bitcoin<span>BTC</span></p>
-                    </div>
-                    <p class="percent-change-coin">2 <span>BTC</span></p>
-                </div>
-                <div class="content-box">
-                    <div class="coin-details">
-                        <p>+1000</p>
-                        <span>Price</span>
-                    </div>
-
-                    <div class="coin-details">
-                        <p>+1000</p>
-                        <span>Price</span>
-                    </div>
-
-                    <div class="coin-details">
-                        <p>+1000</p>
-                        <span>Price</span>
-                    </div>
-                </div>
-            </div>
-        </div> -->
     </main>
 
     <!-- ============================ footer ============================ -->

@@ -1,180 +1,180 @@
 .main{
-  margin: 16px;
+    margin: 16px;
 }
 .head-page{
-  width: 100%;
-  height: 50px;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 56px;
-  padding: 16px;
-  align-items: center;
-  background: var(--input-color);
-  border-radius: 15px;
-  position: relative;
-  color: var(--text-color);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 56px;
+    padding: 16px;
+    align-items: center;
+    background: var(--input-color);
+    border-radius: 15px;
+    position: relative;
+    color: var(--text-color);
 }
 .div-img{
-  width: 30px;
-  height: 30px;
+    width: 30px;
+    height: 30px;
 }
 img{
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 .list{
-  width: 160px;
-  height: 200px;
-  position: absolute;
-  background: burlywood;
-  top: 56px;
-  right: 0;
-  padding: 16px;
-  border-radius: 15px;
-  /* display: none; */
+    width: 160px;
+    height: 200px;
+    position: absolute;
+    background: burlywood;
+    top: 56px;
+    right: 0;
+    padding: 16px;
+    border-radius: 15px;
+    /* display: none; */
 }
 .list li{
-  display: flex;
-  align-items: center;
-  padding-bottom: 8px;
-  color: var(--text-color);
+    display: flex;
+    align-items: center;
+    padding-bottom: 8px;
+    color: var(--text-color);
 }
 .list img{
-  width: 24px;
-  height: 24px
-  
+    width: 24px;
+    height: 24px
+    
 }
 .change-percent {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  height: 130px;
-  align-items: center;
-  border-radius: 15px;
-  margin-top: 24PX;
-  background-image: url(../images/crypto.jpg);
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 130px;
+    align-items: center;
+    border-radius: 15px;
+    margin-top: 24PX;
+    background-image: url(../images/crypto.jpg);
 }
 .top-gainers{
-  color: #5BBFB0;
+    color: #5BBFB0;
 }
 .top-losers{
-  color: #F16D7A;
+    color: #F16D7A;
 }
 .gainers-coin, .losers-coin{
-  display: flex;
-  font-size: 13px;
+    display: flex;
+    font-size: 13px;
 }
 
 .div-search{
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 100%;
-  height: 40px;
-  margin-top: 24px;
-  border-radius: 50px;
-  background: var(--input-color);
-  color: var(--text-color);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    margin-top: 24px;
+    border-radius: 50px;
+    background: var(--input-color);
+    color: var(--text-color);
 }
 .div-search i {
-  font-size: 20px;
+    font-size: 20px;
 }
 i.uil.uil-angle-down{
-  font-size: 32px;
+    font-size: 32px;
 }
 .div-search input[type="text"] {
-  outline: none;
-  border: none;
-  background: var(--input-color);
-  color: var(--text-color);
+    outline: none;
+    border: none;
+    background: var(--input-color);
+    color: var(--text-color);
 }
 .div-title {
-  margin-top: 24px;
+    margin-top: 24px;
 }
 .div-title div{
-  text-align: left;
+    text-align: left;
 }
 .div-title .section-title{
-  color: var(--title-color);
-  font-size: 24px;
-  padding-bottom: 8px;
+    color: var(--title-color);
+    font-size: 24px;
+    padding-bottom: 8px;
 }
 .div-title .section-subtitle{
-  font-size: 13px;
-  margin: 0;
+    font-size: 13px;
+    margin: 0;
 }
 .boxes{
-  display: flex;
-  flex-direction: column;
-  margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
 }
 .box{
-  display: flex;
-  flex-direction: column;
-  height: 150px;
-  justify-content: center;
-  padding: 8px;
-  margin-top: 16px;
-  border-radius: 15px;
-  background-image: url(../images/crypto.jpg);
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: center;
+    padding: 8px;
+    margin-top: 16px;
+    border-radius: 15px;
+    background-image: url(../images/crypto.jpg);
 }
 .head-box{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
 }
 .content-box{
-  display: flex;
-  justify-content: space-evenly;
+    display: flex;
+    justify-content: space-evenly;
 }
 .img-title {
-  display: flex;
+    display: flex;
 }
 .name, .percent-change-coin{
-  padding-left: 8px;
-  color: #fff;
-  font-size: 12px;
+    padding-left: 8px;
+    color: #fff;
+    font-size: 12px;
 
 }
 .name span, .percent-change-coin span{
-  color: var(--title-color);
+    color: var(--title-color);
 }
 
 .name, .percent-change-coin{
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .list{
-  width: 160px;
-  height: 200px;
-  position: absolute;
-  background: burlywood;
-  top: 56px;
-  right: 0;
-  padding: 16px;
-  border-radius: 15px;
-  display: none;
+    width: 160px;
+    height: 200px;
+    position: absolute;
+    background: burlywood;
+    top: 56px;
+    right: 0;
+    padding: 16px;
+    border-radius: 15px;
+    display: none;
 }
 .list li{
-  display: flex;
-  align-items: center;
-  padding-bottom: 8px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 8px;
 }
 .head-box img{
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
 }
 .coin-details {
-  font-size: 13px;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    font-size: 13px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /* for medium devices */
@@ -183,55 +183,56 @@ i.uil.uil-angle-down{
 }
 
 @media screen and (min-width: 768px) {
-  .head-page {
-      width: 50%;
-      margin-left: auto;
-      margin-right: auto;
+    .head-page {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
 
-      height: 64px;
-      margin-top: 104px;
-  }
-  .change-percent{
-      width: 50%;
-      margin-left: auto;
-      margin-right: auto;
-  }
-  .div-search{
-      width: 40%;
-      margin-left: auto;
-      margin-right: auto;
-  }
-  .div-title div{
-      text-align: center;
-  }
-  .boxes {
-      width: 100%;
-      flex-wrap: wrap;
-      flex-direction: row;
-  }
-  .box{
-      width: calc(50% - 8px);
-      margin-left: auto;
-      margin-right: auto;
-  }
+        height: 64px;
+        margin-top: 104px;
+    }
+    .change-percent{
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .div-search{
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .div-title div{
+        text-align: center;
+    }
+    .boxes {
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .box{
+        width: calc(50% - 8px);
+        margin-left: auto;
+        margin-right: auto;
+    }
 
 }
 
 /* for large devices */
 @media screen and (min-width: 1024px) {
-  .boxes {
-      width: 100%;
-      flex-wrap: wrap;
-      flex-direction: row;
-  }
-  .box{
-      width: calc(33.3333% - 8px);
-      margin-left: auto;
-      margin-right: auto;
-  }
-  .div-search {
-      width: 30%;
-      margin-left: auto;
-      margin-right: auto;
-  }
+    .boxes {
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .box{
+        width: calc(33.3333% - 8px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .div-search {
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
+
