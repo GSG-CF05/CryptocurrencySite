@@ -1,6 +1,10 @@
 # CryptoNote
 
 ![2](https://mi9retail-rm9gupg15kxbkvpc.stackpathdns.com/wp-content/uploads/2019/03/evolution-of-retail-analytics-190318.jpg)
+## **Live Website** :tv: <span id="live"></span>
+
+#### You can check out the website => [**Here**](https://gsg-cf05.github.io/CryptocurrencySite/).
+
 
 # Crypto Note App
 
@@ -8,10 +12,8 @@
 - [User Stories](#stories)
 - [Technologies Used](#tech)
 - [User Journey](#journey)
-- [API](#cryptoapi)
+- [APIs](#cryptoapi)
 - [Wireframes UI/UX](#wireframe)
-- [Website Layout](#layout)
-- [Live Website](#live)
 - [Installation](#usage)
 - [Team Members](#team)
 
@@ -68,15 +70,15 @@ The team agreed on guidelines to follow during development. The technologies and
   which is taking a position at the bottom of the page.
 - When clicking on About link, it will take the user directly to its page, and he will find some information about the site .
 - Below the home, when he clicks on market button, he will be moving to the most important part of the website, which provides the
-  user with general information about the crypto market, yet, the most needed, such as top 20 market-cap coins, the top 5 gainers
-  and loserless, Market Summary that is located at the top right of page, which pops up once hovering over it or clicking on it and
+  user with general information about the Crypto Market, yet, the most needed, such as top 20 market-cap coins, the top 5 gainers
+  and losers, Market Summary that is located at the top right of page, which pops up once hovering over it or clicking on it and
   search area where user can search about a certain coin within the whole content of fetched crypto api data using useful features like
   auto complete and select.
 - The last section that contains a link which leads to the Contact Us page.
 
  ## **APIs** <span id="cryptoapi"></span>🎯 
-[**The First (Search) API**](https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/usd.json).
-[**The Second (Crypto) API**](https://api.coincap.io/v2/assets).
+-[**The First (Search) API**](https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/usd.json).
+-[**The Second (Crypto) API**](https://api.coincap.io/v2/assets).
 
 ## **Wireframes UI/UX** :art: <span id="wireframe"></span>
 
@@ -104,13 +106,8 @@ The team agreed on guidelines to follow during development. The technologies and
 <img src="https://i.ibb.co/6yTCRz9/Group-54.png" alt="drawing1" width="1000" />
  
 </p>
-## **Website layout** :iphone: <span id="layout"></span>
----
-<p align='center'>
- 
-## **Live Website** :tv: <span id="live"></span>
 
-You can check the website [**Here**](https://gsg-cf05.github.io/CryptocurrencySite/).
+
 
 ## Running the project locally :hotel: <span id="usage"></span>
 
@@ -121,7 +118,7 @@ You can check the website [**Here**](https://gsg-cf05.github.io/CryptocurrencySi
 ```
 
 ## ♢ Mentor:
-The great mentor![Husam](https://github.com/husamkamal)!.
+*The great mentor* [Husam](https://github.com/husamkamal)!✨
 
 ## **Team Members** :raising_hand: <span id="team"></span>
 
