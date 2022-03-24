@@ -167,8 +167,6 @@ coinDetailsPara3.textContent =`${firstNumber2}${secondNumber2}.${thirdNumber2}T$
     let coinVolume = document.createElement('span');
     coinDetails3.appendChild(coinVolume);
     coinVolume.textContent = 'Volume';
-
-    console.log(name);
   } // end of build Box Function
 
 
@@ -179,13 +177,14 @@ fetch('https://api.coincap.io/v2/assets/')
   .then((apiData) => {
     let coins = apiData.data; // array of objects
 
+   
+
 
 // !TOP 20 MARKET CAP COINS:
       // iteration inside the array which will return all objects
     for (let i = 0; i < 20; i++) {
-        console.log(i);
-        buildBoxDom(coins[i].name, coins[i].symbol, coins[i].changePercent24Hr.substring(0, 6), coins[i].marketCapUsd.split('.'), coins[i].priceUsd.substring(0, 7), coins[i].volumeUsd24Hr );
-      } // end of top20 MC for loop block.
+        buildBoxDom(coins[i].name, coins[i].symbol, coins[i].changePercent24Hr.substring(0, 6), coins[i].marketCapUsd.split('.'), coins[i].priceUsd.substring(0, 7), coins[i].volumeUsd24Hr);
+      } 
 
 
 // !TOP Gainers & Losers:
@@ -269,11 +268,127 @@ fetch('https://api.coincap.io/v2/assets/')
           coinChangePercent.textContent = `${coins[i].changePercent24Hr}${"%"}`;
         }
       }
-    } // end of losers function.
+    } // end of losers block.
 
 
+
+
+
+for (let i = 0; i < coins.length; i++) {
+
+  // !MARKET SUMMARy:
+
+  const searchAnalysis = document.getElementById("search-analysis");
+  const lists = document.getElementById("list");
+
+  if (searchAnalysis) {
+    searchAnalysis.addEventListener("click", () => {
+      lists.classList.toggle("show-analysis-search");
+    });
+  }
+  let headPage = document.createElement("div");
+  headPage.classList.add("head-page");
+  mainPage.appendChild(headPage);
+
+  let marketSummary = document.createElement("p");
+  marketSummary.classList.add("marketSummary");
+  mainPage.appendChild(marketSummary);
+
+  let divImg = document.createElement("div");
+  divImg.classList.add("div-img");
+  mainPage.appendChild(divImg);
+
+  let imgIcon = document.createElement("img");
+  imgIcon.classList.add("imgIcon");
+  divImg.appendChild(imgIcon);
+
+  let list = document.createElement("ul");
+  list.classList.add("list");
+  headPage.appendChild(list);  
+
+  let titleList = document.createElement("p");
+  titleList.classList.add("title-list");
+  list.appendChild(titleList); //
+
+  let liVolume = document.createElement("li");
+  liVolume.classList.add("list_volume");
+  list.appendChild(liVolume); //
+
+  let volumeImg = document.createElement("img");
+  volumeImg.classList.add("volumeImg");
+  volume.setAttribute("src", "../images/analysis.svg");
+  liVolume.appendChild(volumeImg);
+
+  let volume = document.createElement("span");
+  volume.classList.add("volume");
+  liVolume.appendChild(volume);
+
+  let listPrice = document.createElement("li");
+  listPrice.classList.add("list_price");
+  list.appendChild(listPrice); //
+
+  let priceImg = document.createElement("img");
+  priceImg.classList.add("priceImg");
+  priceImg.setAttribute("src", "../images/volume-control.png");
+  listPrice.appendChild(priceImg);
+
+  let price = document.createElement("span");
+  price.classList.add("price");
+  listPrice.appendChild(price);
+
+  let marketCap = document.createElement("li");
+  marketCap.classList.add("marketcap");
+  list.appendChild(marketCap);
+
+  let marketCapImg = document.createElement("img");
+  marketCapImg.classList.add("marketcapImg");
+  marketCapImg.setAttribute("src", "../images/volume-control.png");
+  marketCap.appendChild(marketCapImg);
+
+  let marketCapSpan = document.createElement("span");
+  marketCapSpan.classList.add("marketcapSpan");
+  marketCap.appendChild(marketCapSpan);
+
+} //end of coins length forloop, Market Summary.
+
+
+  
 
 })
 .catch(Error);
 
 
+
+
+// !SEARCH
+
+fetch('https://api.coincap.io/v2/assets/')
+  .then((res) => {
+    return res.json();
+  })
+  .then((apiData) => {
+    let coins = apiData.data; // array of objects
+
+let btn = document.querySelector('.div-search')
+console.log(11111, btn);
+// first delete all old boxes, then compare the input value to api value, then return it as a new only dom box
+btn.addEventListener("click", (e) => {
+e.preventDefault()
+
+  let oldBoxes = document.querySelectorAll(".box"); 
+  oldBoxes.forEach((ele) => {
+      ele.remove();
+  })
+ let searchTxt =  document.getElementById("search").value;
+ for (let i = 1; i < coins.length; i++) {
+     
+
+  if (coins[i].symbol.toLowerCase()==searchTxt) {
+    buildBoxDom(coins[i].name, coins[i].symbol, coins[i].changePercent24Hr.substring(0, 6), coins[i].marketCapUsd.split('.'), coins[i].priceUsd.substring(0, 7), coins[i].volumeUsd24Hr );
+  }
+}
+
+
+}) // end of btn listener
+})
+.catch(Error)
