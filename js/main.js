@@ -1,3 +1,11 @@
+/* ============================ Loading Page ============================ */
+$(function(){
+    // loading page
+    $('.preloader').fadeOut(1000, function(){
+        $(this.parent).fadeOut(2000);
+    });
+});
+
 /* ============================ menu show && hidden ============================ */
 const navMenu = document.getElementById('nav-menu'),
     navToggle = document.getElementById('nav-toggle'),
