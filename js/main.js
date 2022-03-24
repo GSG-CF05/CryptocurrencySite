@@ -1,3 +1,9 @@
+/* ============================ Loading Page ============================ */
+const loader = document.querySelector('.preloader');
+window.addEventListener('load', function(){
+    loader.style.display = 'none';
+})
+
 /* ============================ menu show && hidden ============================ */
 const navMenu = document.getElementById('nav-menu'),
     navToggle = document.getElementById('nav-toggle'),
