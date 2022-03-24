@@ -582,6 +582,7 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all .5;
 }
 .dot {
     width: 16px;

@@ -1,10 +1,8 @@
 /* ============================ Loading Page ============================ */
-$(function(){
-    // loading page
-    $('.preloader').fadeOut(1000, function(){
-        $(this.parent).fadeOut(2000);
-    });
-});
+const loader = document.querySelector('.preloader');
+window.addEventListener('load', function(){
+    loader.style.display = 'none';
+})
 
 /* ============================ menu show && hidden ============================ */
 const navMenu = document.getElementById('nav-menu'),
