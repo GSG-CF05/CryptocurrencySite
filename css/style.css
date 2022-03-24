@@ -32,7 +32,7 @@ body.dark-theme{
     --title-color: #F6B01A;
     --subtitle-color: #707070;
     --text-color: #E5E5E5;
-    --input-color: #030B18;
+    --input-color: #19294475;
     --body-color: #030E20;
 }
 
@@ -197,8 +197,12 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all .3s;
+    cursor: pointer;
 }
-
+.home-img:hover{
+    transform: translateY(-10px);
+}
 .home-title{
     font-size: var(--title-font-size);
     color: var(--title-color);
@@ -237,13 +241,16 @@ img{
 /* ============================ about ============================ */
 .about-img{
     width: 200px;
-    height: 200px;
+    /* height: 200px; */
     border-radius: .5rem;
     align-items: center;
     justify-content: center;
     margin: auto;
+    transition: all .3s;
 }
-
+.about-img:hover{
+    transform: translateY(-10px);
+}
 /* ============================ market ============================ */
 .market.section{
     background: url(../images/market-banner.jpg) no-repeat center;
@@ -251,6 +258,7 @@ img{
     height: 200px;
     margin-bottom: 32px;
     padding: 0;
+    max-width: 100%;
 }
 .market .overlay{
     width: 100%;
@@ -281,7 +289,7 @@ img{
     height: 40px;
     border-radius: 15px;
     background-color: #F6B01A;
-    color: #030E20;
+    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -302,7 +310,7 @@ img{
 }
 .contact-input{
     width: 100%;
-    background-color: var(--input-color);
+    background: transparent;
     color: var(--text-color);
     font-size: var(--text-font-size);
     border: none;
