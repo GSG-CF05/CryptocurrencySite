@@ -188,6 +188,91 @@ fetch('https://api.coincap.io/v2/assets/')
       } // end of top20 MC for loop block.
 
 
+// !TOP Gainers & Losers:
+
+    // declare array outside forloop, and put all change percentChange24 in it. 
+
+    let percentArray = []; 
+    for (let i = 0; i < coins.length; i++) {
+      percentArray.push(coins[i].changePercent24Hr);
+    }
+
+    let changePercent = document.createElement("div");
+    mainPage.appendChild(changePercent);
+    changePercent.classList.add("change-percent");
+
+    // !TOP Gainers:
+
+    // TOP Gainers Main & sub Container:
+    let topGainers = document.createElement("div");
+    topGainers.classList.add("top-gainers");
+    changePercent.appendChild(topGainers);
+
+    let gainersCoin = document.createElement("div");
+    gainersCoin.classList.add("gainers-coin");
+    topGainers.appendChild(gainersCoin);
+
+    // Top Gainers main code: 
+    // sorting elements in descending order
+    percentArray.sort((a, b) => b - a);
+    let gainersArray = percentArray.slice(0, 5);
+
+    //  now, we compare the value in the sliced array(top5 gainers)
+    //  with the value of api object, using two levels of forloop
+    //  (all coins.length foorloop with each 5 loops of gainers forloop)
+    //  to gaurantee we match all possibilities, if match happens,
+    //  we get the value of symbol key of the same object inside api.
+
+    for (let i = 0; i < coins.length; i++) {
+      for (let x = 0; x < gainersArray.length; x++) {
+        if (coins[i].changePercent24Hr == gainersArray[x]) {
+
+          // The 2 coin details Fetched API data:
+          let coinPara = document.createElement("p");
+          gainersCoin.appendChild(coinPara);
+          coinPara.textContent = `${coins[i].symbol}`;
+
+          let coinChangePercent = document.createElement("span");
+          gainersCoin.appendChild(coinChangePercent);
+          coinChangePercent.textContent = `${coins[i].changePercent24Hr}${"%"}`;
+        }
+      }
+    } // end of gainers block.
+
+    // !TOP Losers:
+
+    // TOP Losers Main & sub Container:
+    let topLosers = document.createElement("div");
+    changePercent.appendChild(topLosers);
+    topLosers.classList.add("top-losers");
+
+    let losersCoin = document.createElement("div");
+    topLosers.classList.add("losers-coin");
+    topLosers.appendChild(losersCoin);
+
+    // Top Losers main code:
+    // sorting elements in ascending order
+    percentArray.sort((a, b) => a - b);
+    let losersArray = percentArray.slice(0, 5);
+
+    for (let i = 0; i < coins.length; i++) {
+      for (let x = 0; x < losersArray.length; x++) {
+        if (coins[i].changePercent24Hr == losersArray[x]) {
+          // The 2 coin details Fetched API data:
+
+          let coinPara = document.createElement("p");
+          losersCoin.appendChild(coinPara);
+          coinPara.textContent = `${coins[i].symbol}`;
+
+          let coinChangePercent = document.createElement("span");
+          losersCoin.appendChild(coinChangePercent);
+          coinChangePercent.textContent = `${coins[i].changePercent24Hr}${"%"}`;
+        }
+      }
+    } // end of losers function.
+
+
+
 })
 .catch(Error);
 
