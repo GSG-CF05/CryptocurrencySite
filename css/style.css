@@ -11,9 +11,9 @@
     /* color mode */
     --title-color: #F6B01A;
     --subtitle-color: #707070;
-    --text-color: #030E20;
-    --input-color: #E5E5E5;
-    --body-color: #fff;
+    --text-color: #E5E5E5;
+    --input-color: #19294475;
+    --body-color: #030E20;
 
     /* ============================ font size && typography ============================ */
     --body-font: 'Poppins-Regular';
@@ -29,11 +29,11 @@
 
 /* ==================== variables dark theme ==================== */
 body.dark-theme{
-    --title-color: #F6B01A;
+     --title-color: #F6B01A;
     --subtitle-color: #707070;
-    --text-color: #E5E5E5;
-    --input-color: #19294475;
-    --body-color: #030E20;
+    --text-color: #030E20;
+    --input-color: #E5E5E5;
+    --body-color: #fff;
 }
 
 /* ==================== button dark / light ==================== */
@@ -114,6 +114,7 @@ img{
     left: 0;
     z-index: 100;
     background-color: var(--body-color);
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 51%);
 }
 
 /* ============================ nav ============================ */
@@ -247,6 +248,7 @@ img{
     justify-content: center;
     margin: auto;
     transition: all .3s;
+    cursor: pointer;
 }
 .about-img:hover{
     transform: translateY(-10px);
@@ -287,15 +289,18 @@ img{
 .btn-market{
     width: 100px;
     height: 40px;
-    border-radius: 15px;
+    border-radius: .5rem;
     background-color: #F6B01A;
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 14px;
+    transition: all .3s;
 }
-
+.btn-market:hover{
+    width: 108px;
+}
 
 /* ==================== contact me section ==================== */
 .contact-container{
@@ -330,6 +335,13 @@ img{
 }
 .contact-inputs a{
     justify-content: center;
+}
+.img-contact{
+    transition: all .3s;
+    cursor: pointer;
+}
+.img-contact:hover{
+    transform: translateY(-10px);
 }
 /* ==================== footer ==================== */
 .footer{
