@@ -238,6 +238,7 @@ img {
   text-align: center;
   color: var(--text-color);
   font-size: 13px;
+  padding: 16px;
 }
 .first {
   display: flex;
@@ -259,35 +260,7 @@ img {
 .overlay-img img{
   border-radius: 15px;
 }
-@media screen and (min-width: 768px) {
-  .about_title {
-    color: #f6b01a;
-    font-size: 33px;
-    margin-left: 16px;
-    margin-top: 66px;
-    text-align: center;
-  }
-  .details {
-    color: #f6b01a;
-    font-size: 25px;
-    margin-left: 16px;
-  }
-  .bitcoicon {
-    border-radius: 50px;
-    width: 70px;
-    height: 70px;
-    margin-top: 15px;
-  }
-  .recommended {
-    text-align: center;
-    font-size: 18px;
-    color: var(--subtitle-color);
-  }
-  .aboutsite {
-    text-align: center;
-    color: var(--subtitle-color);
-  }
-}
+
 
 /* ==================== footer ==================== */
 .footer{
@@ -364,6 +337,25 @@ img {
   }
   .footer-copy {
     font-size: 10px;
+  }
+
+  .first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .about_details {
+    width: 100%;
+    height: 190px;
+    border: 2px solid #f6b01a;
+    margin-bottom: 16px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all .3s;
+    cursor: pointer;
   }
 }
 
@@ -443,6 +435,35 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .about_title {
+    color: #f6b01a;
+    font-size: 33px;
+    margin-left: 16px;
+    margin-top: 66px;
+    text-align: center;
+  }
+  .details {
+    color: #f6b01a;
+    font-size: 25px;
+    margin-left: 16px;
+  }
+  .bitcoicon {
+    border-radius: 50px;
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+  }
+  .recommended {
+    text-align: center;
+    font-size: 18px;
+    color: var(--subtitle-color);
+  }
+  .aboutsite {
+    text-align: center;
+    color: var(--subtitle-color);
+  }
+}
 /* for large devices */
 @media screen and (min-width: 1024px) {
   .header,
